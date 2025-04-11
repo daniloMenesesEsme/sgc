@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos globais para o Sistema de Gestão Comercial */
+
+/* Reset de margin/padding para formulários dentro de cards */
+.content-card form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Garantir que os cards tenham um padding consistente */
+.content-card .p-6 {
+    padding: 1.5rem;
+}
+
+/* Definir altura mínima para os inputs para garantir consistência */
+.form-input, input[type="text"], input[type="email"], input[type="password"], 
+input[type="number"], input[type="tel"], input[type="url"], textarea, select {
+    min-height: 2.5rem;
+}
+
+/* Estilos para os botões */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+/* Confirmação visual de ação bem-sucedida */
+.alert-success {
+    background-color: #d1fae5;
+    border-left: 4px solid #10b981;
+    color: #065f46;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.375rem;
+}
+
+/* Alerta de erro */
+.alert-error {
+    background-color: #fee2e2;
+    border-left: 4px solid #ef4444;
+    color: #b91c1c;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.375rem;
+}
+
+/* Garantir que o conteúdo tenha um espaçamento consistente */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Placeholder para inputs - cor mais suave */
+::placeholder {
+    color: #9ca3af;
+    opacity: 1;
+}
+
+/* Garantir que os ícones em inputs tenham o mesmo tamanho */
+.input-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Estilos para campos obrigatórios */
+.required::after {
+    content: '*';
+    color: #ef4444;
+    margin-left: 0.25rem;
+}
+
+/* Aumentar tamanho dos ícones na barra lateral */
+.sidebar-icon {
+    font-size: 1.125rem;
+}

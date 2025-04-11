@@ -1,0 +1,184 @@
+/* Estilos personalizados para o SGC */
+
+/* Cores principais */
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+    --secondary-color: #475569;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --warning-color: #f59e0b;
+    --info-color: #3b82f6;
+}
+
+/* Barra lateral */
+.main-sidebar {
+    background: linear-gradient(to bottom, #1e40af, #1e3a8a) !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background: linear-gradient(to right, #1d4ed8, #1e40af) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Logo e cabeçalho */
+.brand-link {
+    background: linear-gradient(to right, #1e40af, #1e3a8a) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Botões */
+.btn-primary {
+    background: linear-gradient(to right, #2563eb, #1d4ed8) !important;
+    border-color: #1d4ed8 !important;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #1d4ed8, #1e40af) !important;
+    border-color: #1e40af !important;
+}
+
+.btn-secondary {
+    background: linear-gradient(to right, #475569, #334155) !important;
+    border-color: #334155 !important;
+}
+
+.btn-success {
+    background: linear-gradient(to right, #10b981, #059669) !important;
+    border-color: #059669 !important;
+}
+
+.btn-danger {
+    background: linear-gradient(to right, #ef4444, #dc2626) !important;
+    border-color: #dc2626 !important;
+}
+
+.btn-info {
+    background: linear-gradient(to right, #3b82f6, #2563eb) !important;
+    border-color: #2563eb !important;
+}
+
+.btn-warning {
+    background: linear-gradient(to right, #f59e0b, #d97706) !important;
+    border-color: #d97706 !important;
+    color: #fff !important;
+}
+
+/* Inputs com ícones */
+.input-group-text {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+}
+
+.form-control:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    border-radius: 0.5rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.card-header {
+    background: linear-gradient(to right, #f9fafb, #f3f4f6) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Tabelas */
+.table thead th {
+    background: linear-gradient(to right, #f9fafb, #f3f4f6);
+    border-bottom: 2px solid #e5e7eb;
+    color: #4b5563;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(59, 130, 246, 0.05);
+}
+
+/* Badges */
+.badge-primary, .bg-primary {
+    background-color: #3b82f6 !important;
+}
+
+.badge-secondary, .bg-secondary {
+    background-color: #6b7280 !important;
+}
+
+.badge-success, .bg-success {
+    background-color: #10b981 !important;
+}
+
+.badge-danger, .bg-danger {
+    background-color: #ef4444 !important;
+}
+
+.badge-warning, .bg-warning {
+    background-color: #f59e0b !important;
+}
+
+.badge-info, .bg-info {
+    background-color: #3b82f6 !important;
+}
+
+.bg-purple {
+    background-color: #8b5cf6 !important;
+}
+
+/* Avatar do usuário */
+.user-panel .image img {
+    background-color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Content header */
+.content-header {
+    padding: 15px;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.content-header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-header {
+        margin-left: 0 !important;
+    }
+}
+
+/* Melhoria nos formulários */
+.form-group label {
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.custom-control-label {
+    font-weight: 400;
+}
+
+/* Botão de busca de CEP */
+#btn-buscar-cep {
+    height: calc(1.8125rem + 2px);
+}
+
+/* Estilo para os campos obrigatórios */
+.text-danger {
+    color: #ef4444 !important;
+} 
