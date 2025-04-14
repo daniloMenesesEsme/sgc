@@ -331,6 +331,12 @@ return [
             'active' => ['produtos*']
         ],
         [
+            'text' => 'Fornecedores',
+            'url'  => 'fornecedores',
+            'icon' => 'fas fa-truck',
+            'active' => ['fornecedores*']
+        ],
+        [
             'text' => 'Tamanhos',
             'url'  => 'tamanhos',
             'icon' => 'fas fa-ruler',

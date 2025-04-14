@@ -6,6 +6,7 @@ use App\Http\Controllers\EmpresaController;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\TamanhoController;
 use App\Http\Controllers\BackupController;
+use App\Http\Controllers\FornecedorController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -36,6 +37,11 @@ Route::middleware('auth')->group(function () {
     // Rotas de Backups
     Route::resource('backups', BackupController::class);
     Route::get('/backups/{backup}/executar', [BackupController::class, 'executar'])->name('backups.executar');
+
+    // Rotas para Fornecedores
+    Route::resource('fornecedores', FornecedorController::class);
+    Route::match(['get', 'post'], '/busca-cnpj', [FornecedorController::class, 'buscaCnpj'])->name('busca.cnpj');
+    Route::match(['get', 'post'], '/busca-cep', [FornecedorController::class, 'buscaCep'])->name('busca.cep');
 });
 
 require __DIR__.'/auth.php';
